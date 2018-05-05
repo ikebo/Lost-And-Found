@@ -1,6 +1,9 @@
 失物招领项目源码
 
-项目暂时地址为: www.thinkbig.top/TPs/infoBoard/
+项目暂时地址为: 
+www.thinkbig.top/TPs/infoBoard/
+or
+140.82.46.148/TPs/infoBoard/
 
 后端: thinkphp 3.2.3
 前端: h5+c3+js+jq
