@@ -1,0 +1,97 @@
+<layout name="layout/layout" />
+<link rel="stylesheet" href="__PUBLIC__/uploadify/uploadify.css" />
+<style>
+    .myinfo-ul li {
+        margin-bottom: 20px;
+    }
+    .preview_box img {
+      width: 200px;
+    }
+
+    #img_input {
+        display: none;
+    }
+
+    #img_label {
+      background-color: #f2d547;
+      border-radius: 5px;
+      display: inline-block;
+      padding: 10px;
+    }
+
+    #sub_input {
+        display: block !important;
+        margin-top: 10px;  
+    }
+</style>
+<div class="container">
+    <div class="col-md-2">
+        <nav>
+            <ul class="nav nav-pills nav-stacked myinfo-ul">
+                <li role="presentation"><a href="{:U('Info/myinfo')}">基本信息</a></li>
+                <li role="presentation"><a href="{:U('Info/itemInfo')}">物品信息</a></li>
+                <li role="presentation" class="active"><a href="{:U('Info/usershow')}">个人展示</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-7">
+        <if condition="$img_src">
+        <?php $res = '/TPs/infoBoard/'.$img_src ?>
+        <h4 class="text-primary" style="margin-bottom: 20px">个人展示</h4>
+        <img src="{$res}" width="200" height="200" style="margin-left: 20%; display: block"/>  
+            <button class="btn btn-info" id="btn_change_img" style="float: right;">修改</button>
+        <else/>
+        
+        <form action="{:U('Info/do_upload')}" class="form-horizontal" method="post" enctype="multipart/form-data" >
+        <div class="form-group">
+            <div class="col-sm-6">
+                <label for="img_input" id="img_label" >选择图片+</label>    
+                <input id="img_input" name='photo'  type="file" accept="image/*"/> 
+                <div class="preview_box"></div>                
+                <input type="submit"  id="sub_input" value="修改" class="btn btn-default">
+                    
+
+            </div>
+            <div class="col-sm-6">
+                
+            </div>
+        </div>
+        </form>
+        </if>
+    </div>
+</div>
+
+<script>
+$('#btn_change_img').click(function(){
+    // 异步请求usershow方法
+    var url = '/TPs/infoBoard/index.php?m=home&c=info&a=usershow';
+    window.location.href = url + '&status=1';
+});
+
+$("#img_input").on("change", function(e){
+
+  var file = e.target.files[0]; //获取图片资源
+
+  // 只选择图片文件
+  if (!file.type.match('image.*')) {
+    return false;
+  }
+
+  var reader = new FileReader();
+
+  reader.readAsDataURL(file); // 读取文件
+
+  // 渲染文件
+  reader.onload = function(arg) {
+
+    var img = '<img class="preview" src="' + arg.target.result + '" alt="preview"/>';
+    $(".preview_box").empty().append(img);
+    }
+});
+
+</script>
+
+

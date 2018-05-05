@@ -1,0 +1,66 @@
+<layout name="layout/layout"/>
+<div class="container">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8">
+        <table class="table table-bordered">
+            <tr>
+                <th class="text-center" colspan="2">物品信息</th>
+                <th class="text-center" colspan="2">
+                    <if condition="$item.type eq 1">
+                        拾者信息
+                        <else/>
+                        失主信息
+                    </if>
+                </th>
+            </tr>
+            <tr>
+                <td class="text-center">名称</td>
+                <td class="text-center text-danger"><b>{$item.item_name|isEmpty}</b></td>
+                <td class="text-center">姓名</td>
+                <td class="text-center text-danger"><b>{$info.real_name|isEmpty}</b></td>
+            </tr>
+            <tr>
+                <td class="text-center">时间</td>
+                <td class="text-center text-danger"><b>{$item.time|isEmpty}</b></td>
+                <td class="text-center">手机</td>
+                <td class="text-center text-danger"><b>{$info.phonenum|isEmpty}</b></td>
+            </tr>
+            <tr>
+                <td class="text-center">地点</td>
+                <td class="text-center text-danger"><b>{$item.place|isEmpty}</b></td>
+                <td class="text-center">扣扣</td>
+                <td class="text-center text-danger"><b>{$info.qqnum|isEmpty}</b></td>
+            </tr>
+            <tr>
+                <td class="text-center">描述</td>
+                <td class="text-center text-danger"><p><b>{$item.detail|isEmpty}</b></p></td>
+                <td class="text-center">微信</td>
+                <td class="text-center text-danger"><b>{$info.wxnum|isEmpty}</b></td>
+            </tr>
+            <tr>
+                <td class="text-center">图片</td>
+                <td class="text-center">
+                    <if condition="$item.item_img">
+                        <img src="{$item.item_img}" width="150px" height="150px">
+                        <else/>
+                        <b>无</b>
+                    </if>
+                </td>
+                <td class="text-center">图片</td>
+                <td class="text-center">
+                    <if condition="$info.real_img">
+                        <img src="{$info.real_img}" width="150px" height="150px">
+                        <else/>
+                        <b>无</b>
+                    </if>
+                </td>
+            </tr>
+        </table>
+        <button class="btn btn-info btn-sm" style="float: right;" onclick="window.history.back()">返回</button>
+    </div>
+    <div class="col-md-2">
+
+    </div>
+
+</div>

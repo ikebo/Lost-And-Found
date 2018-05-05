@@ -1,0 +1,163 @@
+[ 2018-04-24T19:42:06+08:00 ] 127.0.0.1 /TPs/infoBoard/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.059179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.061372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.061518s ]
+SQL: SHOW COLUMNS FROM `bf_user` [ RunTime:0.0351s ]
+SQL: SHOW COLUMNS FROM `bf_info` [ RunTime:0.1006s ]
+SQL: SHOW COLUMNS FROM `bf_item` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bf_user User  JOIN bf_info Info ON User.user_id=Info.user_id  JOIN bf_item Item ON Info.user_id=Item.user_id LIMIT 1   [ RunTime:0.0117s ]
+SQL: SELECT User.user_id AS user_id,User.username AS username,Info.info_id AS info_id,Info.real_name AS real_name,Info.qqnum AS qqnum,Info.wxnum AS wxnum,Info.phonenum AS phonenum,Info.real_img AS real_img,Info.user_id AS user_id,Item.item_id AS item_id,Item.item_name AS item_name,Item.time AS time,Item.place AS place,Item.detail AS detail,Item.user_id AS user_id,Item.type AS type,Item.item_img AS item_img FROM bf_user User  JOIN bf_info Info ON User.user_id=Info.user_id  JOIN bf_item Item ON Info.user_id=Item.user_id ORDER BY Info.info_id desc LIMIT 0,3   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.582891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.583184s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.129928s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.130143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.070090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.070233s ]
+
+[ 2018-04-24T19:42:11+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035208s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002812s ]
+
+[ 2018-04-24T19:42:13+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php?m=home&c=user&a=do_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+SQL: SHOW COLUMNS FROM `bf_user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `bf_user` WHERE `username` = 'k_1010011' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-04-24T19:42:13+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php?m=home&c=index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003577s ]
+SQL: SHOW COLUMNS FROM `bf_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bf_info` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bf_item` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bf_user User  JOIN bf_info Info ON User.user_id=Info.user_id  JOIN bf_item Item ON Info.user_id=Item.user_id LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT User.user_id AS user_id,User.username AS username,Info.info_id AS info_id,Info.real_name AS real_name,Info.qqnum AS qqnum,Info.wxnum AS wxnum,Info.phonenum AS phonenum,Info.real_img AS real_img,Info.user_id AS user_id,Item.item_id AS item_id,Item.item_name AS item_name,Item.time AS time,Item.place AS place,Item.detail AS detail,Item.user_id AS user_id,Item.type AS type,Item.item_img AS item_img FROM bf_user User  JOIN bf_info Info ON User.user_id=Info.user_id  JOIN bf_item Item ON Info.user_id=Item.user_id ORDER BY Info.info_id desc LIMIT 0,3   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000351s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2018-04-24T19:42:15+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/Home/Item/postItem.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001810s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002608s ]
+
+[ 2018-04-24T19:42:17+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/Home/Item/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+ERR: 非法操作:index
+
+[ 2018-04-24T19:42:37+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+SQL: SHOW COLUMNS FROM `bf_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bf_info` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bf_item` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bf_user User  JOIN bf_info Info ON User.user_id=Info.user_id  JOIN bf_item Item ON Info.user_id=Item.user_id LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT User.user_id AS user_id,User.username AS username,Info.info_id AS info_id,Info.real_name AS real_name,Info.qqnum AS qqnum,Info.wxnum AS wxnum,Info.phonenum AS phonenum,Info.real_img AS real_img,Info.user_id AS user_id,Item.item_id AS item_id,Item.item_name AS item_name,Item.time AS time,Item.place AS place,Item.detail AS detail,Item.user_id AS user_id,Item.type AS type,Item.item_img AS item_img FROM bf_user User  JOIN bf_info Info ON User.user_id=Info.user_id  JOIN bf_item Item ON Info.user_id=Item.user_id ORDER BY Info.info_id desc LIMIT 0,3   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002286s ]
+
+[ 2018-04-24T19:43:06+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php?m=home&c=item&a=detail&item_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+SQL: SHOW COLUMNS FROM `bf_item` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bf_item` WHERE `item_id` = 3 LIMIT 1   [ RunTime:0.0234s ]
+SQL: SELECT `user_id` FROM `bf_item` WHERE `item_id` = 3 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bf_info` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `bf_info` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+NOTIC: [8] Use of undefined constant item_img - assumed 'item_img' E:\wampserver\wamp64\www\TPs\InfoBoard\Application\Runtime\Cache\Home\e5474c878f0dd9628572a13bf1e812b8.php 第 87 行.
+NOTIC: [8] Array to string conversion E:\wampserver\wamp64\www\TPs\InfoBoard\Application\Runtime\Cache\Home\e5474c878f0dd9628572a13bf1e812b8.php 第 87 行.
+NOTIC: [8] Use of undefined constant real_img - assumed 'real_img' E:\wampserver\wamp64\www\TPs\InfoBoard\Application\Runtime\Cache\Home\e5474c878f0dd9628572a13bf1e812b8.php 第 93 行.
+NOTIC: [8] Array to string conversion E:\wampserver\wamp64\www\TPs\InfoBoard\Application\Runtime\Cache\Home\e5474c878f0dd9628572a13bf1e812b8.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001088s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001316s ]
+

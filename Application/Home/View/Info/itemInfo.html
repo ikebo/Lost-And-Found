@@ -1,0 +1,104 @@
+<layout name="layout/layout"/>
+<link rel="stylesheet" href="__PUBLIC__/css/myinfo.css">
+
+<div class="container">
+    <div class="col-md-2">
+        <nav>
+            <ul class="nav nav-pills nav-stacked myinfo-ul">
+                <li role="presentation"><a href="{:U('Info/myinfo')}">基本信息</a></li>
+                <li role="presentation" class="active"><a href="{:U('Info/itemInfo')}">基本信息</a></li>
+                <li role="presentation"><a href="{:U('Info/usershow')}">个人展示</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="col-md-8">
+        <table class="table table-striped ">
+            <tr>
+                <th>物品</th>
+                <th>名称</th>
+                <th>类型</th>
+                <th>时间</th>
+                <th>地点</th>
+                <th>详情</th>
+                <th></th>
+            </tr>
+            <volist name="list" id="item">
+                <tr>
+                    <td>
+                        <if condition="$item.item_img eq null"><img src="__PUBLIC__/images/default.png" width="25" height="25">
+                            <else/><img src="/TPs/infoBoard/{$item.item_img}" width="25" height="25"/>
+                        </if>
+                    </td>
+                    <td>{$item.item_name}</td >
+                    <td><if condition="$item.type eq 1">招领<else/>失物</if></td>
+                    <td>{$item.time}</td>
+                    <td>{$item.place}</td>
+                    <td><a style="text-decoration: none;" href="/TPs/infoBoard/index.php?m=home&c=item&a=xdetail&item_id={$item.item_id}">查看</a></td>
+                    <td>
+                        <button type="button" style="border: 0px; background-color: #ffffff;" class="edit" aria-label="edit">
+                            <span class="glyphicon glyphicon-edit xtarget" aria-hidden="true"></span>
+                            <input type="text"  hidden  value="{$item.item_id}">
+                        </button>
+                        <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true" onclick="here.del()">&times;</span>
+                            <input type="text" id="target" hidden value="{$item.item_id}">
+                        </button>
+                    </td>
+                </tr>
+            </volist>
+        </table>
+        <div>
+            {$page}
+        </div>
+    </div>
+    <div class="col-md-2"></div>
+
+</div>
+
+<script>
+var here = {
+    del: function() {
+        var id_input = document.getElementById('target');
+        var item_id = id_input.value;
+        if(!item_id) {
+            dialog.error('发生错误！')
+        }
+
+        var url = "/TPs/infoBoard/index.php?m=home&c=item&a=do_del";
+        var data = {'item_id':item_id};
+        $.post(url,data,function(result) {
+            if(result.status == 0) {
+                return dialog.error(result.message)
+            }
+            if(result.status == 1) {
+                return dialog.success(result.message,'/TPs/infoBoard/index.php?m=home&c=info&a=itemInfo')
+            }
+        },'JSON')
+    }
+};
+
+
+var log = function() {
+    console.log.apply(console,arguments);
+};
+
+var e = function(sel){
+    return document.querySelectorAll(sel);
+};
+
+var els = e('.xtarget');
+
+for(i=0; i<els.length; ++i) {
+    els[i].addEventListener('click', function (event) {
+        var self = event.target;
+        var nt = self.nextSibling.nextSibling;
+        var item_id = nt.value;
+
+        var url = '/TPs/infoBoard/index.php?m=home&c=item&a=editItem';
+        $.get(url,{'item_id':item_id},function(){
+            window.location.href = url + '&item_id=' + item_id;
+        })
+    })
+}
+
+</script>

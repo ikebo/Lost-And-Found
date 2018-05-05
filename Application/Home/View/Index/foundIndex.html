@@ -1,0 +1,48 @@
+<layout name="layout/layout"/>
+<style>
+    a:hover {
+        color: lightskyblue;
+    }
+</style>
+<div class="container container-info">
+    <div class="col-md-2">
+        <ul class="nav nav-pills nav-stacked">
+            <li style="margin-bottom: 10px;"><a href="{:U('Index/index')}" >查看全部</a></li>
+            <li style="margin-bottom: 10px;"><a href="{:U('Index/foundIndex')}" style="color: grey; background-color: #eeeeee;">招领物品</a></li>
+            <li><a href="{:U('Index/lostIndex')}">丢失物品</a></li>
+        </ul>
+    </div>
+    <div class="col-md-8">
+        <table class="table table-striped ">
+            <tr>
+                <th>物品</th>
+                <th>名称</th>
+                <th>类型</th>
+                <th>时间</th>
+                <th>地点</th>
+                <th>详情</th>
+            </tr>
+            <volist name="list" id="item">
+                <tr>
+                    <td>
+                        <if condition="$item.item_img eq null"><img src="__PUBLIC__/images/default.png" width="25" height="25">
+                            <else/><img src="/TPs/infoBoard/{$item.item_img}" width="25" height="25"/>
+                        </if>
+                    </td>
+                    <td>{$item.item_name}</td >
+                    <td><if condition="$item.type eq 1">招领<else/>失物</if></td>
+                    <td>{$item.time}</td>
+                    <td>{$item.place}</td>
+                    <td><a style="text-decoration: none;" href="/TPs/infoBoard/index.php?m=home&c=item&a=detail&item_id={$item.item_id}">查看</a></td>
+                </tr>
+            </volist>
+        </table>
+        <div>
+            {$page}
+        </div>
+    </div>
+    <div class="col-md-2">
+
+    </div>
+
+</div>

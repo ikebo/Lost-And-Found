@@ -1,0 +1,7 @@
+.register-container {
+     max-width: 500px;
+}
+
+.require-login {
+    float: right;
+}

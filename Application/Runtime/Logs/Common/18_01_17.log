@@ -1,0 +1,174 @@
+[ 2018-01-17T00:19:02+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/m/home/c/index/a/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002076s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:19:26+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/m/home/c/index/a/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001252s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:19:27+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/m/home/c/index/a/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001468s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:19:37+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/Home/Index/index.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001791s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:21:42+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/Home/Index/index.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012379s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:21:52+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/Home/Index/index.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001778s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:22:26+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/Home/Index/index.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001625s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:23:45+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/Home/Index/index.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001256s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:26:18+08:00 ] ::1 /TPs/infoBoard/index.php/U(%22Home/Index/index%22).html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001322s ]
+ERR: 无法加载模块:U("Home
+
+[ 2018-01-17T00:27:14+08:00 ] ::1 /TPs/infoBoard/index.php/U(%22Home/Index/index%22).html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001470s ]
+ERR: 无法加载模块:U("Home
+
+[ 2018-01-17T00:27:26+08:00 ] ::1 /TPs/infoBoard/Index/index.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001273s ]
+ERR: 无法加载模块:Index.html
+
+[ 2018-01-17T00:28:12+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/Home/Index/index.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000222s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003052s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:29:31+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/Home/Index/index.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001443s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:29:31+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/Home/Index/index.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001465s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:29:32+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/Home/Index/index.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001327s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:29:33+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/Home/Index/index.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001369s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:29:33+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/Home/Index/index.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001323s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:29:41+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/Home/Index/index.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001337s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:29:42+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/Home/Index/index.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001247s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:29:47+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/Home/Index/index.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001628s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:29:48+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/Home/Index/index.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001129s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:29:48+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/Home/Index/index.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001429s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:29:48+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/Home/Index/index.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001122s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:30:00+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/Home/Index/index.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001277s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:30:00+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/Home/Index/index.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002230s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:30:01+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/Home/Index/index.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001364s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:30:02+08:00 ] ::1 /TPs/infoBoard/index.php/TPs/infoBoard/index.php/Home/Index/index.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001274s ]
+ERR: 无法加载模块:TPs
+
+[ 2018-01-17T00:30:09+08:00 ] ::1 /TPs/infoBoard/index.php/m=home&c=Index&a=index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001234s ]
+ERR: 无法加载模块:M=home&c=Index&a=index
+
+[ 2018-01-17T00:30:30+08:00 ] ::1 /TPs/infoBoard/index.php/m=home&c=Index&a=index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002674s ]
+ERR: 无法加载模块:M=home&c=Index&a=index
+

@@ -1,0 +1,381 @@
+[ 2018-02-04T15:31:59+08:00 ] ::1 /TPs/infoBoard/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.043529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018579s ]
+SQL: SHOW COLUMNS FROM `ib_info` [ RunTime:0.9150s ]
+SQL: SHOW COLUMNS FROM `ib_user` [ RunTime:0.0218s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ib_info Info  JOIN ib_user User ON User.user_id=Info.user_id LIMIT 1   [ RunTime:0.1732s ]
+SQL: SELECT Info.info_id AS info_id,Info.name AS name,Info.cls AS cls,Info.stuId AS stuId,Info.major AS major,Info.eduBg AS eduBg,Info.image AS image,User.user_id AS user_id,User.username AS username FROM ib_info Info  JOIN ib_user User ON User.user_id=Info.user_id ORDER BY Info.info_id desc LIMIT 0,6   [ RunTime:0.0390s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.027017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.027224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.171435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.171610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021951s ]
+
+[ 2018-02-04T15:32:07+08:00 ] ::1 /TPs/infoBoard/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001293s ]
+SQL: SHOW COLUMNS FROM `ib_info` [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `ib_user` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ib_info Info  JOIN ib_user User ON User.user_id=Info.user_id LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT Info.info_id AS info_id,Info.name AS name,Info.cls AS cls,Info.stuId AS stuId,Info.major AS major,Info.eduBg AS eduBg,Info.image AS image,User.user_id AS user_id,User.username AS username FROM ib_info Info  JOIN ib_user User ON User.user_id=Info.user_id ORDER BY Info.info_id desc LIMIT 0,6   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001076s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001180s ]
+
+[ 2018-02-04T15:32:10+08:00 ] ::1 /TPs/infoBoard/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001244s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044714s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044873s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001163s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001260s ]
+
+[ 2018-02-04T15:32:11+08:00 ] ::1 /TPs/infoBoard/index.php?m=home&c=user&a=do_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001072s ]
+SQL: SHOW COLUMNS FROM `ib_user` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `ib_user` WHERE `username` = 'root' LIMIT 1   [ RunTime:0.1099s ]
+
+[ 2018-02-04T15:32:13+08:00 ] ::1 /TPs/infoBoard/index.php?m=home&c=user&a=do_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+SQL: SHOW COLUMNS FROM `ib_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `ib_user` WHERE `username` = 'root' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-02-04T15:32:16+08:00 ] ::1 /TPs/infoBoard/index.php?m=home&c=user&a=do_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+SQL: SHOW COLUMNS FROM `ib_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ib_user` WHERE `username` = 'k_1010011' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-02-04T15:32:17+08:00 ] ::1 /TPs/infoBoard/index.php?m=home&c=index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001743s ]
+SQL: SHOW COLUMNS FROM `ib_info` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `ib_user` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM ib_info Info  JOIN ib_user User ON User.user_id=Info.user_id LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT Info.info_id AS info_id,Info.name AS name,Info.cls AS cls,Info.stuId AS stuId,Info.major AS major,Info.eduBg AS eduBg,Info.image AS image,User.user_id AS user_id,User.username AS username FROM ib_info Info  JOIN ib_user User ON User.user_id=Info.user_id ORDER BY Info.info_id desc LIMIT 0,6   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.050028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.050175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001183s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001279s ]
+
+[ 2018-02-04T15:32:30+08:00 ] ::1 /TPs/infoBoard/index.php/Home/Info/myinfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001138s ]
+SQL: SHOW COLUMNS FROM `ib_info` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ib_info` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ib_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ib_user` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0113s ]
+SQL: SELECT `stuId` FROM `ib_info` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000983s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001080s ]
+
+[ 2018-02-04T15:32:43+08:00 ] ::1 /TPs/infoBoard/index.php/Home/Info/eduInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
+SQL: SHOW COLUMNS FROM `ib_info` [ RunTime:0.0196s ]
+SQL: SELECT * FROM `ib_info` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `eduBg` FROM `ib_info` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001114s ]
+
+[ 2018-02-04T15:32:48+08:00 ] ::1 /TPs/infoBoard/index.php/Home/Info/myinfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001337s ]
+SQL: SHOW COLUMNS FROM `ib_info` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ib_info` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ib_user` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `ib_user` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `stuId` FROM `ib_info` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000998s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001407s ]
+
+[ 2018-02-04T15:32:48+08:00 ] ::1 /TPs/infoBoard/index.php/Home/Info/eduInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001313s ]
+SQL: SHOW COLUMNS FROM `ib_info` [ RunTime:0.0779s ]
+SQL: SELECT * FROM `ib_info` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT `eduBg` FROM `ib_info` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012658s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001593s ]
+
+[ 2018-02-04T15:32:49+08:00 ] ::1 /TPs/infoBoard/index.php/Home/Info/myinfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001275s ]
+SQL: SHOW COLUMNS FROM `ib_info` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ib_info` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ib_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ib_user` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0244s ]
+SQL: SELECT `stuId` FROM `ib_info` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000385s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001691s ]
+
+[ 2018-02-04T15:32:51+08:00 ] ::1 /TPs/infoBoard/index.php/Home/Info/postBaseInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001311s ]
+SQL: SHOW COLUMNS FROM `ib_info` [ RunTime:0.0163s ]
+SQL: SELECT * FROM `ib_info` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `stuId` FROM `ib_info` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056873s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001479s ]
+
+[ 2018-02-04T15:32:53+08:00 ] ::1 /TPs/infoBoard/index.php?m=home&c=info&a=do_postBaseInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001224s ]
+SQL: SHOW COLUMNS FROM `ib_info` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ib_info` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `ib_info` SET `name`='张大山',`stuId`='16202030113',`major`='计算机科学与技术',`cls`='计科1701班',`user_id`='5' WHERE `user_id` = 5 [ RunTime:0.0782s ]
+
+[ 2018-02-04T15:32:54+08:00 ] ::1 /TPs/infoBoard/index.php?m=home&c=info&a=myinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+SQL: SHOW COLUMNS FROM `ib_info` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `ib_info` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ib_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ib_user` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `stuId` FROM `ib_info` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001212s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001335s ]
+
+[ 2018-02-04T15:32:55+08:00 ] ::1 /TPs/infoBoard/index.php/Home/Info/eduInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001234s ]
+SQL: SHOW COLUMNS FROM `ib_info` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ib_info` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `eduBg` FROM `ib_info` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001353s ]
+
+[ 2018-02-04T15:32:57+08:00 ] ::1 /TPs/infoBoard/index.php/Home/Info/postEduInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003757s ]
+SQL: SHOW COLUMNS FROM `ib_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ib_info` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `eduBg` FROM `ib_info` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001197s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001303s ]
+
+[ 2018-02-04T15:32:59+08:00 ] ::1 /TPs/infoBoard/index.php?m=home&c=info&a=do_postEduInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001226s ]
+SQL: SHOW COLUMNS FROM `ib_info` [ RunTime:0.0189s ]
+SQL: UPDATE `ib_info` SET `eduBg`='     大学本科。' WHERE `user_id` = 5 [ RunTime:0.0004s ]
+
+[ 2018-02-04T15:33:00+08:00 ] ::1 /TPs/infoBoard/index.php?m=home&c=info&a=eduInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001189s ]
+SQL: SHOW COLUMNS FROM `ib_info` [ RunTime:0.0495s ]
+SQL: SELECT * FROM `ib_info` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `eduBg` FROM `ib_info` WHERE `user_id` = 5 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001221s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001328s ]
+

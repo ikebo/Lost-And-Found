@@ -1,0 +1,53 @@
+<layout name="layout/layout"/>
+<link rel="stylesheet" href="__PUBLIC__/css/myinfo.css">
+<style>
+    .info-changeBtn {
+        float: right;
+    }
+</style>
+<div class="container">
+    <div class="col-md-2">
+    <nav>
+        <ul class="nav nav-pills nav-stacked myinfo-ul">
+            <li role="presentation" class="active"><a href="{:U('Info/myinfo')}">基本信息</a></li>
+            <li role="presentation"><a href="{:U('Info/itemInfo')}">物品信息</a></li>
+            <li role="presentation"><a href="{:U('Info/usershow')}">个人展示</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-7">
+        <table class="table table-hover table-striped">
+            <tr>
+                <th>用户名</th>
+                <td><text class="center">{$user.username}</text></td>
+            </tr>
+            <tr class="danger">
+                <th>姓名</th>
+                <td>{$userinfo.real_name}</td>
+            </tr>
+            <tr class="warning">
+                <th>班级</th>
+                <td>{$userinfo.clsname}</td>
+            </tr>
+            <tr class="success">
+                <th>QQ</th>
+                <td>{$userinfo.qqnum}</td>
+            </tr>
+            <tr class="warning">
+                <th>微信</th>
+                <td>{$userinfo.wxnum}</td>
+            </tr>
+            <tr class="info">
+                <th>手机</th>
+                <td>{$userinfo.phonenum}</td>
+            </tr>
+
+        </table>
+        <a href="{:U('Info/postBaseInfo')}"><button class="btn btn-info info-changeBtn">修改</button></a>
+    </div>
+    <div class="col-md-1"></div>
+
+</div>

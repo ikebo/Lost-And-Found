@@ -1,0 +1,6 @@
+.navbar-brand {
+    background-image: url("../images/logo2.png");
+    width: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

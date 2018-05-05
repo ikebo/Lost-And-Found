@@ -1,0 +1,51 @@
+<layout name="layout/layout" />
+<link rel="stylesheet" href="__PUBLIC__/css/login.css">
+<div class="container login-container">
+<form action="__URL__/do_login">
+<h3 class="text-success text-center">登录</h3>
+<div class="form-group">
+    <label for="username">用户名</label>
+    <input type="text" name="username" class="form-control" id="username" placeholder="username">
+</div>
+<div class="form-group">
+    <label for="password">密码</label>
+    <input type="password" name="password" class="form-control" id="password" placeholder="password">
+</div>
+<button type="button" class="btn btn-info" onclick="login.check()">登录</button>
+<div class="require-register">
+    <text class="text-primary">没有账号?</text>
+    <a href="{:U('User/register')}" class="btn btn-default">注册</a>
+</div>
+</form>
+</div>
+
+<script>
+    var login = {
+        check : function() {
+            // 获取登录页面中的用户名和密码
+            var username = $('input[name="username"]').val();
+            var password = $('input[name="password"]').val();
+
+            if(!username) {
+                dialog.error('用户名不能为空');
+            }
+            if(!password) {
+                dialog.error('密码不能为空');
+            }
+
+            var url = "/TPs/infoBoard/index.php?m=home&c=user&a=do_login";
+            var data = {'username':username,'password':password};
+            // 执行异步请求
+            $.post(url,data,function(result) {
+                if(result.status == 0) {
+                    return dialog.error(result.message);
+                }
+                if(result.status == 1) {
+                    return dialog.success(result.message, '/TPs/infoBoard/index.php?m=home&c=index&a=index');
+                }
+            },'JSON');
+
+        }
+    };
+</script>
+

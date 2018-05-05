@@ -1,0 +1,126 @@
+[ 2018-04-22T14:26:14+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/m=home&c=info&a=do_upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+ERR: 无法加载模块:M=home&c=info&a=do_upload
+
+[ 2018-04-22T14:29:59+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/m=home&c=info&a=do_upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+ERR: 无法加载模块:M=home&c=info&a=do_upload
+
+[ 2018-04-22T14:30:00+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/m=home&c=info&a=do_upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001034s ]
+ERR: 无法加载模块:M=home&c=info&a=do_upload
+
+[ 2018-04-22T14:30:01+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/m=home&c=info&a=do_upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001094s ]
+ERR: 无法加载模块:M=home&c=info&a=do_upload
+
+[ 2018-04-22T14:30:16+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/m=home&c=info&a=do_upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+ERR: 无法加载模块:M=home&c=info&a=do_upload
+
+[ 2018-04-22T14:30:34+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/m=home&c=info&a=do_upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000958s ]
+ERR: 无法加载模块:M=home&c=info&a=do_upload
+
+[ 2018-04-22T14:30:35+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/m=home&c=info&a=do_upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001139s ]
+ERR: 无法加载模块:M=home&c=info&a=do_upload
+
+[ 2018-04-22T14:30:35+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/m=home&c=info&a=do_upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+ERR: 无法加载模块:M=home&c=info&a=do_upload
+
+[ 2018-04-22T14:30:48+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/m=home&c=info&a=do_upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001094s ]
+ERR: 无法加载模块:M=home&c=info&a=do_upload
+
+[ 2018-04-22T14:30:49+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/m=home&c=info&a=do_upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001499s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006852s ]
+ERR: 无法加载模块:M=home&c=info&a=do_upload
+
+[ 2018-04-22T14:30:49+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/m=home&c=info&a=do_upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001082s ]
+ERR: 无法加载模块:M=home&c=info&a=do_upload
+
+[ 2018-04-22T14:30:50+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/m=home&c=info&a=do_upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001096s ]
+ERR: 无法加载模块:M=home&c=info&a=do_upload
+
+[ 2018-04-22T14:30:51+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/m=home&c=info&a=do_upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001095s ]
+ERR: 无法加载模块:M=home&c=info&a=do_upload
+
+[ 2018-04-22T14:30:51+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/m=home&c=info&a=do_upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000195s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003156s ]
+ERR: 无法加载模块:M=home&c=info&a=do_upload
+
+[ 2018-04-22T14:30:52+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/m=home&c=info&a=do_upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001721s ]
+ERR: 无法加载模块:M=home&c=info&a=do_upload
+
+[ 2018-04-22T14:31:02+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/m=home&c=info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+ERR: 无法加载模块:M=home&c=info
+
+[ 2018-04-22T14:31:09+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/m=home&c=info&a=do_upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+ERR: 无法加载模块:M=home&c=info&a=do_upload
+
+[ 2018-04-22T14:31:13+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/m=home&c=info&a=do_upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+ERR: 无法加载模块:M=home&c=info&a=do_upload
+
+[ 2018-04-22T14:31:33+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/m=home&c=info&a=do_upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005082s ]
+ERR: 无法加载模块:M=home&c=info&a=do_upload
+
+[ 2018-04-22T14:31:34+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/m=home&c=info&a=do_upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002330s ]
+ERR: 无法加载模块:M=home&c=info&a=do_upload
+
+[ 2018-04-22T14:31:35+08:00 ] 127.0.0.1 /TPs/infoBoard/index.php/m=home&c=info&a=do_upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000791s ]
+ERR: 无法加载模块:M=home&c=info&a=do_upload
+
